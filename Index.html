@@ -8,13 +8,19 @@
 			body { background-color: #fff ; margin: 0px ; padding: 0px ;}
 			header { margin: 0px ; padding: 0px ; width: 100%; background-color: #bde9ff ; border: 10px solid #bde9ff; }
 			nav ul { background-color: #bde9ff ; list-style-type: none ; text-align: right ; margin-right: 50px }
-			nav a { text-decoration: none ; }
-			nav li { display: inline ; padding-right: 15px ;  }
+			nav a { position: relative; text-decoration: none ; }
+			nav li { display: inline-block ; padding-right: 15px ;  }
+			nav ul ul { position: absolute; background-color: #bde9ff ; padding: 0px ;
+			text-align: left ; display: none ; }
+			nav ul ul li { border: 1px solid; display: block ; width: 8em;
+            padding-left: 1em; margin-left: 0; }
+			nav li:hover ul ul { display: block; }
 			a:link { color: #1c1f9e ; text-decoration: none ; }
 			a:visited { color: #1c1f9e ;}
 			a:hover { color: #e69d0b ; }
 			img { margin: 0px; padding 0px; width: 100% ; height: auto ; }
-			footer { width: 100% ; background-color: #bde9ff; border: 10px solid #bde9ff; text-align: center ;}
+			footer { margin: 0px ; padding 0px ; width: 100% ; background-color: #bde9ff; border: 10px solid #bde9ff; text-align: center ;}
+			h2 { margin-left: 10px ; }
 		</style>
 	</head>
 	<body>
@@ -23,15 +29,23 @@
 		<nav>
 		<ul>
 			<li><a href="Index.html">Home</a></li>
+			<li><a href="things.html">Things to do</a></li>
+				<ul>
+					<li><a href="art.html">Arts and Culture</a></li>
+				</ul>
 			<li><a href="places.html">Places to Stay</a></li>
 			<li><a href="food.html">Food</a></li>
 			<li><a href="events.html">Events</a></li>
+				<ul>
+					<li><a href="sports.html">Sports</a></li>
+				</ul>
 			<li><a href="aboutus.html">About Us</a></li>
 		</ul>
 		</nav>
 		<img src="ncbeach.jpeg" height="5212" width="5212">
 	</header>
-	<h1>
+	<h2>Visit Summerbridge!</h2>
+	<hr>
 	<footer>
 	All images belong to the website creator.<br>
 	Contact @ 
