@@ -47,6 +47,12 @@ background-color : #ffd9a3;
 border : #ffd9a3 solid 10px;
 text-align : center;
 }
+dl {
+margin: 25px;
+}
+dt{
+font-weight: bold;
+}
 .clearL {
 clear: left;
 }
@@ -70,11 +76,13 @@ height : auto;
 float: right;
 width: 30%;
 height: auto;
+border: outset 5px;
 }
 .blaseball{
 float: left;
 width: 40%;
 height: auto;
+border: outset 5px;
 }
 .centered{
 text-align: center;
